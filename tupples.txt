@@ -1,0 +1,104 @@
+# ===== 1. Create a tuple =====
+
+colors = ("red", "green", "blue")
+
+print("1. Original tuple:", colors)
+ 
+# ===== 2. Properties of a tuple =====
+
+print("\n2. Properties")
+
+print("Type:", type(colors))
+
+print("Length:", len(colors))
+
+print("First item:", colors[0])
+
+print("Last item:", colors[-1])
+
+print("Slice [0:2]:", colors[0:2])
+
+print("Is 'red' in tuple?", "red" in colors)
+
+print("Mixed types:", (1, "hello", 3.5, True))
+
+print("Duplicates allowed:", (1, 2, 2, 3))
+
+print("Nested item:", ((1, 2), (3, 4))[1][0])
+ 
+# ===== 3. Tuples cannot be changed =====
+
+print("\n3. Immutable")
+
+try:
+
+    colors[0] = "pink"
+
+except TypeError as e:
+
+    print("Error:", e)
+ 
+# ===== 4. The 2 tuple methods =====
+
+nums = (10, 20, 20, 30, 20)
+
+print("\n4. Tuple methods")
+
+print("count of 20:", nums.count(20))    # how many times it appears
+
+print("index of 20:", nums.index(20))    # position of the first match
+ 
+# ===== 5. Built-in functions and operators =====
+
+print("\n5. Built-in functions")
+
+print("len:", len(nums))
+
+print("min:", min(nums))
+
+print("max:", max(nums))
+
+print("sum:", sum(nums))
+
+print("sorted:", sorted(nums))           # returns a new LIST
+
+print("Join tuples:", (1, 2) + (3, 4))
+
+print("Repeat tuple:", (0,) * 3)
+ 
+# ===== 6. Single-item tuple needs a comma =====
+
+single = (5,) # touple with one item 
+
+not_tuple = (5)
+
+print("\n6. Single item")
+
+print(type(single), type(not_tuple))
+ 
+
+
+name, age, city = ("Ravi", 20, "Chennai")
+
+print("\n7. Unpacking:", name, age, city)
+ 
+# ===== 8. "Changing" a tuple using a list =====
+
+temp = list(colors)        # tuple -> list
+
+temp[0] = "pink"           # change the list
+
+colors = tuple(temp)       # list -> tuple
+
+print("\n8. New tuple:", colors)
+ 
+# ===== 9. Loop through a tuple =====
+
+print("\n9. Loop")
+
+for c in colors:
+
+    print(c)
+
+print("Loop finished")
+ 

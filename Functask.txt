@@ -1,0 +1,40 @@
+Shopping Mall Billing System
+
+Scenario: A shopping mall wants to calculate the final bill for customers.
+
+Requirements:
+1. Get product name.
+2. Get product price.
+3. Get quantity.
+4. Create a function to calculate subtotal.
+5. Create a function to apply discount.
+6. Create a function to display the final bill.
+Discount:
+- Purchase above ₹5,000 – 10% discount.
+- Purchase above ₹10,000 – 15% discount.
+- Otherwise – No discount.
+Example:
+Product: Shirt
+Price: 1000
+Quantity: 6
+Subtotal: 6000
+Discount: 600
+Final Amount: 5400
+-------------
+Employee Salary Calculation
+
+Scenario: A company wants to calculate monthly employee salaries.
+
+Requirements:
+1. Get employee name and employee ID.
+2. Get basic salary.
+3. Create a function to calculate HRA (20%).
+4. Create a function to calculate DA (10%).
+5. Create a function to calculate gross salary.
+6. Display employee salary details.
+Example:
+Employee: Arun
+Basic Salary: 30000
+HRA: 6000
+DA: 3000
+Gross Salary: 39000
